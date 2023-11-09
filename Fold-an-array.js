@@ -40,3 +40,17 @@ function foldArray(a, n) {
 
 // Solution
 
+function foldArray (array, runs) {
+  let arrayToFold = Array.from (array);
+  while (runs > 0) {
+    let resultArray = [];
+    while (arrayToFold.length > 1) {
+      let firstElement = arrayToFold.shift();
+      let lastElement = arrayToFold.pop();
+      resultArray.push(firstElement + lastElement);
+    }
+    arrayToFold = [...resultArray, ...arrayToFold];
+    runs--;
+  }
+  return arrayToFold;
+}
