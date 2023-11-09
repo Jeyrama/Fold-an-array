@@ -37,3 +37,6 @@ function foldArray(a, n) {
   while (c.length) r.push(c.pop() + (c.shift() || 0));
   return n - 1 ? foldArray(r, n - 1) : r;
 }
+
+// Solution
+
