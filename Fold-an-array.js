@@ -28,3 +28,6 @@ and says how many runs of folding your method has to do.
 If an array with one element is folded, it stays as the same array.
 The input array should not be modified!
 */
+
+
+// Solution
